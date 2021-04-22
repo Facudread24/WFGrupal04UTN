@@ -24,9 +24,9 @@ namespace WFGrupal04UTN
 			}
 		}
 
-		public DataSet Consulta(string querySql)
+		public DataSet Consulta(string querySql)	// Metodo para hacer consultas
 		{
-			string srtconn = "Data Source=localhost\\MSSQLSERVER2;Initial Catalog = Viajes;Integrated Security = True";
+			string srtconn = "Data Source=localhost\\SQLEXPRESS;Initial Catalog = Viajes;Integrated Security = True";
 			SqlConnection Cn_V = new SqlConnection(srtconn);
 			Cn_V.Open();
 			SqlCommand cmd = new SqlCommand(querySql, Cn_V);
@@ -38,28 +38,31 @@ namespace WFGrupal04UTN
 		}
 		protected void ddl_prov_ini_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			int provId = int.Parse(ddl_prov_ini.SelectedValue);
+			// Cambio para mostrar todas las localidades de la provincia
+			int provId = int.Parse(ddl_prov_ini.SelectedValue);	// id de la provincia que se selecciona
 			ddl_local_ini.DataSource = Consulta($"select * from Localidades where Localidades.IdProvincia={provId}");
 			ddl_local_ini.DataTextField = "NombreLocalidad";
 			ddl_local_ini.DataValueField = "IdLocalidad";
 			ddl_local_ini.DataBind();
-			ddl_local_ini.Items.Insert(0,new ListItem("[SELECCIONAR LOCALIDAD]", "0"));
+			ddl_local_ini.Items.Insert(0,new ListItem("Seleccionar Localidad", "0"));
 
+			// Selecciona todos menos el valor elegido
 			ddl_prov_fin.DataSource = Consulta($"select * from Provincias where IdProvincia!={provId}");
 			ddl_prov_fin.DataTextField = "NombreProvincia";
 			ddl_prov_fin.DataValueField = "IdProvincia";
 			ddl_prov_fin.DataBind();
-			ddl_prov_fin.Items.Insert(0, new ListItem("[SELECCIONAR PROVINCIA]", "0"));
+			ddl_prov_fin.Items.Insert(0, new ListItem("Seleccionar Provincia", "0"));
 		}
 
 		protected void ddl_prov_fin_SelectedIndexChanged(object sender, EventArgs e)
 		{
+			// Cambio para mostrar todas las localidades de la provincia x2
 			int provId = int.Parse(ddl_prov_fin.SelectedValue);
 			ddl_local_fin.DataSource = Consulta($"select * from Localidades where Localidades.IdProvincia={provId}");
 			ddl_local_fin.DataTextField = "NombreLocalidad";
 			ddl_local_fin.DataValueField = "IdLocalidad";
 			ddl_local_fin.DataBind();
-			ddl_local_fin.Items.Insert(0, new ListItem("[SELECCIONAR LOCALIDAD]", "0"));
+			ddl_local_fin.Items.Insert(0, new ListItem("Seleccionar Localidad", "0"));
 		}
 	}
 }
