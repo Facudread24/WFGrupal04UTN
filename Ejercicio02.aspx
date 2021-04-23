@@ -17,7 +17,7 @@
                 <asp:ListItem Value="&lt;">Menor a</asp:ListItem>
             </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtProducto" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtProducto" runat="server" Width="129px"></asp:TextBox>
             <br />
             Id Categoria:&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="ddlCategoria" runat="server" Height="16px" Width="137px">
@@ -25,8 +25,8 @@
                 <asp:ListItem Value="&gt;">Mayor a:</asp:ListItem>
                 <asp:ListItem Value="&lt;">Menor a:</asp:ListItem>
             </asp:DropDownList>
-&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtCategoria" runat="server" Width="125px"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtCategoria" runat="server" Width="129px"></asp:TextBox>
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

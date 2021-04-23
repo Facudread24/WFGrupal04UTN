@@ -50,21 +50,39 @@ namespace WFGrupal04UTN
                 cn.Open();
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = cn;
-                    //SqlDataReader dr;
+                    SqlDataReader dr;
 
                            if(txtProducto.Text != "" && txtCategoria.Text != "")
                             {
                                 cmd.CommandText = $"select * from Productos where IdProducto {ddlProducto.SelectedValue} {txtProducto.Text} AND IdCategoría {ddlCategoria.SelectedValue} {txtCategoria.Text}";
-                                SqlDataReader dr = cmd.ExecuteReader();
+                                 dr = cmd.ExecuteReader();
 
                                 grdDatos.DataSource = dr;
                                 grdDatos.DataBind();
-                            
+
                             }
+                             else if(txtProducto.Text != "")
+                               {
+                                        cmd.CommandText = $"select * from Productos where IdProducto {ddlProducto.SelectedValue} {txtProducto.Text}";
+                                        dr = cmd.ExecuteReader();
+
+                                        grdDatos.DataSource = dr;
+                                        grdDatos.DataBind();
+                              }
+                                 else {
+                                        cmd.CommandText = $"select * from Productos where IdCategoría {ddlCategoria.SelectedValue} {txtCategoria.Text}";
+                                        dr = cmd.ExecuteReader();
+
+                                        grdDatos.DataSource = dr;
+                                        grdDatos.DataBind();
+                                  }
+                                 
                 
 
-                cn.Close();
+                cn.Close(); 
             }
+            txtProducto.Text = "";
+            txtCategoria.Text = "";
         }
 
         protected void btnQuitar_Click(object sender, EventArgs e)
