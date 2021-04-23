@@ -116,3 +116,13 @@ C:\Users\ser-a\Documents\Develop\C#\WFGrupal04UTN\obj\Debug\WFGrupal04UTN.csproj
 C:\Users\ser-a\Documents\Develop\C#\WFGrupal04UTN\obj\Debug\WFGrupal04UTN.csproj.CopyComplete
 C:\Users\ser-a\Documents\Develop\C#\WFGrupal04UTN\obj\Debug\WFGrupal04UTN.dll
 C:\Users\ser-a\Documents\Develop\C#\WFGrupal04UTN\obj\Debug\WFGrupal04UTN.pdb
+C:\Users\S\Desktop\Programacion 3\clon tp4\bin\WFGrupal04UTN.dll.config
+C:\Users\S\Desktop\Programacion 3\clon tp4\bin\WFGrupal04UTN.dll
+C:\Users\S\Desktop\Programacion 3\clon tp4\bin\WFGrupal04UTN.pdb
+C:\Users\S\Desktop\Programacion 3\clon tp4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\S\Desktop\Programacion 3\clon tp4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\S\Desktop\Programacion 3\clon tp4\obj\Debug\WFGrupal04UTN.csprojAssemblyReference.cache
+C:\Users\S\Desktop\Programacion 3\clon tp4\obj\Debug\WFGrupal04UTN.csproj.CoreCompileInputs.cache
+C:\Users\S\Desktop\Programacion 3\clon tp4\obj\Debug\WFGrupal04UTN.csproj.CopyComplete
+C:\Users\S\Desktop\Programacion 3\clon tp4\obj\Debug\WFGrupal04UTN.dll
+C:\Users\S\Desktop\Programacion 3\clon tp4\obj\Debug\WFGrupal04UTN.pdb
