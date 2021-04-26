@@ -24,8 +24,11 @@ namespace WFGrupal04UTN
             {
             SqlConnection cn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Neptuno;Integrated Security=True");
             cn.Open();
-
-            SqlCommand cmd = new SqlCommand("select * from Productos", cn);
+            string consulta = "select IdProducto as 'ID Producto', NombreProducto as 'Nombre Producto', IdProveedor as 'ID Proveedor', " +
+                "CantidadporUnidad as 'Cantidad x Unidad', UnidadesEnExistencia as 'Unidades en Existencia', UnidadesEnPedido as 'Unidades en Pedido', " +
+                "NivelNuevoPedido as 'Nivel Nuevo Pedido', Suspendido " +
+                "FROM Productos";
+            SqlCommand cmd = new SqlCommand(consulta, cn);
             SqlDataReader dr = cmd.ExecuteReader();
 
             grdDatos.DataSource = dr;

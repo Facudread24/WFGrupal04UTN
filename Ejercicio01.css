@@ -1,0 +1,36 @@
+﻿body {
+    margin: 0 auto;
+}
+
+p {
+    margin: 0px;
+}
+
+#form1 {
+    display: grid;
+    justify-items: center;
+    height: 60vh;
+}
+
+.wrapper {
+    display: grid;
+}
+
+.wrapped-div div {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-row-gap: 10px;
+    margin-top: 50px;
+}
+
+.wrapped-div h2 {
+    text-align: center;
+    margin: 2px;
+}
+
+.wrapped-div hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    background-color: #000; /* Modern Browsers */
+}

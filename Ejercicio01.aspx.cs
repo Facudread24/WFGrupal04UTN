@@ -52,6 +52,7 @@ namespace WFGrupal04UTN
 			ddl_prov_fin.DataValueField = "IdProvincia";
 			ddl_prov_fin.DataBind();
 			ddl_prov_fin.Items.Insert(0, new ListItem("Seleccionar Provincia", "0"));
+			ddl_local_fin.SelectedIndex = 0;
 		}
 
 		protected void ddl_prov_fin_SelectedIndexChanged(object sender, EventArgs e)
@@ -63,6 +64,7 @@ namespace WFGrupal04UTN
 			ddl_local_fin.DataValueField = "IdLocalidad";
 			ddl_local_fin.DataBind();
 			ddl_local_fin.Items.Insert(0, new ListItem("Seleccionar Localidad", "0"));
+	
 		}
 	}
 }
