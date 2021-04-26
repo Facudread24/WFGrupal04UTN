@@ -6,10 +6,11 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+     <link href="./Ejercicio03.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="wrapped">
             <p>Seleccionar Tema: </p> 
                 <asp:DropDownList ID="ddl_Tema" runat="server"> </asp:DropDownList>
             <div>

@@ -17,7 +17,7 @@ namespace WFGrupal04UTN
             {
 
                 string temaelegido = ((DropDownList)PreviousPage.FindControl("ddl_Tema")).SelectedIndex.ToString();// Busco la ddl de la pagina anterior agarro su indice y la guardo en una variable tipo string
-                gv_Libros.DataSource = Consulta($"SELECT IdLibro, IdTema, Titulo, Precio, Autor FROM Libros WHERE IdTema = {temaelegido}");
+                gv_Libros.DataSource = Consulta($"SELECT IdLibro as 'ID Libro', IdTema as 'ID Tema', Titulo, Precio, Autor FROM Libros WHERE IdTema = {temaelegido}");
                 gv_Libros.DataBind();
 
             }
