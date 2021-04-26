@@ -15,7 +15,7 @@
             <div class="wrapped-div">
                 <h2>Id Producto: </h2>
                 <div>
-                    <asp:DropDownList ID="ddlProducto" runat="server" Height="19px" Width="136px">
+                    <asp:DropDownList ID="ddlProducto" runat="server" Height="20px" Width="136px">
                         <asp:ListItem Value="=">Igual a:</asp:ListItem>
                         <asp:ListItem Value="&gt;">Mayor a:</asp:ListItem>
                         <asp:ListItem Value="&lt;">Menor a</asp:ListItem>
@@ -27,7 +27,7 @@
             <div class="wrapped-div">
                 <h2>Id Categoria: </h2>
                 <div>
-                    <asp:DropDownList ID="ddlCategoria" runat="server" Height="16px" Width="137px">
+                    <asp:DropDownList ID="ddlCategoria" runat="server" Height="20px" Width="137px">
                         <asp:ListItem Value="=">Igual a:</asp:ListItem>
                         <asp:ListItem Value="&gt;">Mayor a:</asp:ListItem>
                         <asp:ListItem Value="&lt;">Menor a:</asp:ListItem>

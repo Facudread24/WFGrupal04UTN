@@ -2,4 +2,40 @@
     margin: 0 auto;
 }
 
+.wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
 
+.wrapped-div {
+    justify-content: center;
+    flex-direction: column;
+}
+
+input[type=submit] {
+    flex-direction: row;
+    width: 150px;
+    margin-top: 10px;
+}
+
+    input[type=submit]:hover {
+        cursor: pointer;
+    }
+
+select {
+    outline: none;
+    border: 2px black solid;
+    cursor: pointer;
+}
+
+table {
+    margin-top: 15px;
+    text-align: center;
+    border: #2b5851 2px solid;
+}
+
+    table tr {
+        border: #2b5851 2px solid;
+    }
